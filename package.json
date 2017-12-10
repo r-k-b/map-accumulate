@@ -1,0 +1,26 @@
+{
+  "name": "map-accumulate",
+  "version": "1.0.0",
+  "description": "map accumulation helpers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "make; chokidar chokidar src/**/*.elm -c 'yes \"\" | head -n 40; make'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/r-k-b/map-accumulate.git"
+  },
+  "author": "Robert K. Bell <robert.k.bell@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/r-k-b/map-accumulate/issues"
+  },
+  "homepage": "https://github.com/r-k-b/map-accumulate#readme",
+  "dependencies": {
+    "chokidar": "1.7.0",
+    "chokidar-cli": "1.2.0",
+    "elm": "0.18.0",
+    "elm-test": "0.18.12"
+  }
+}

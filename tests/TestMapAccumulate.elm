@@ -16,9 +16,9 @@ suite =
                         ( b, a )
                     else
                         -- odd
-                        ( b, a ++ "," ++ toString b )
+                        ( b * 10, a ++ "," ++ toString b )
             in
                 \_ ->
                     mapAccumL func "" [ 1, 2, 3, 4 ]
-                        |> Expect.equal ( [ 2, 4 ], ",1,3" )
+                        |> Expect.equal ( [ 10, 2, 30, 4 ], ",1,3" )
         ]
