@@ -3,7 +3,6 @@ module TestMapAccumulate exposing (suite)
 import Expect exposing (Expectation, fail)
 import Test exposing (describe, test, Test)
 import MapAccumulate exposing (mapAccumL)
-import Maybe.Extra
 
 
 suite =
@@ -35,7 +34,7 @@ suite =
             in
                 \_ ->
                     mapAccumL func "" [ 1, 2, 3, 4 ]
-                        |> (\( list, acc ) -> ( list |> Maybe.Extra.values, acc ))
+                        |> (\( list, acc ) -> ( list |> values, acc ))
                         |> Expect.equal ( [ 2, 4 ], ",1,3" )
         , test "example 3 - removal with clearing" <|
             let
@@ -54,6 +53,27 @@ suite =
             in
                 \_ ->
                     mapAccumL func "" [ 1, 2, 3, 42, 5, 6, 7 ]
-                        |> (\( list, acc ) -> ( list |> Maybe.Extra.values, acc ))
+                        |> (\( list, acc ) -> ( list |> values, acc ))
                         |> Expect.equal ( [ 2, 42, 5, 6, 7 ], "towel!" )
         ]
+
+
+{-| Convert a list of `Maybe a` to a list of `a` only for the values different
+from `Nothing`.
+
+    values [ Just 1, Nothing, Just 2 ] == [1, 2]
+
+-}
+values : List (Maybe a) -> List a
+values =
+    List.foldr foldrValues []
+
+
+foldrValues : Maybe a -> List a -> List a
+foldrValues item list =
+    case item of
+        Nothing ->
+            list
+
+        Just v ->
+            v :: list
