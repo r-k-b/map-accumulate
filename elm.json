@@ -2,7 +2,7 @@
     "type": "package",
     "name": "r-k-b/map-accumulate",
     "summary": "\\\"map accumulate\\\" helpers for Elm.",
-    "license": "MIT",
+    "license": "BSD-3-Clause",
     "version": "1.0.1",
     "exposed-modules": [
         "MapAccumulate"
