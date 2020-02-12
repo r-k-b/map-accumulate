@@ -1,6 +1,8 @@
 
 # mapAccumulate
 
+![.github/workflows/make.yml](https://github.com/r-k-b/map-accumulate/workflows/.github/workflows/make.yml/badge.svg)
+
 "Map Accumulate" helpers for Elm.
 
 Useful if you want to modify items in two lists, each based on everything in 
