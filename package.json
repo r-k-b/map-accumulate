@@ -4,8 +4,8 @@
   "description": "map accumulation helpers",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "make; chokidar chokidar src/**/*.elm -c 'yes \"\" | head -n 40; make'"
+    "test": "elm-test",
+    "watch": "make; chokidar src/**/*.elm -c 'yes \"\" | head -n 40; make'"
   },
   "repository": {
     "type": "git",
