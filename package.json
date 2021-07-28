@@ -19,7 +19,7 @@
   "homepage": "https://github.com/r-k-b/map-accumulate#readme",
   "dependencies": {
     "chokidar": "3.5.1",
-    "chokidar-cli": "2.1.0",
+    "chokidar-cli": "3.0.0",
     "elm": "^0.19.1-5",
     "elm-test": "^0.19.1-revision4"
   }
