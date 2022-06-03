@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/r-k-b/map-accumulate/issues"
   },
-  "homepage": "https://github.com/r-k-b/map-accumulate#readme",
+  "homepage": "https://package.elm-lang.org/packages/r-k-b/map-accumulate/latest/",
   "dependencies": {
     "chokidar": "3.5.1",
     "chokidar-cli": "3.0.0",
