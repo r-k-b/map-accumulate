@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "elm-test",
-    "watch": "make; chokidar src/**/*.elm -c 'yes \"\" | head -n 40; make'"
+    "watch": "elm-test --watch"
   },
   "repository": {
     "type": "git",
@@ -18,8 +18,6 @@
   },
   "homepage": "https://package.elm-lang.org/packages/r-k-b/map-accumulate/latest/",
   "dependencies": {
-    "chokidar": "3.5.1",
-    "chokidar-cli": "3.0.0",
     "elm": "^0.19.1-5",
     "elm-test": "^0.19.1-revision4"
   }
