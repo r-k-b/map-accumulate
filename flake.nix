@@ -39,7 +39,7 @@
             name = "map-accumulate-devshell";
 
             buildInputs = (with pkgs; [ nixfmt nodejs ])
-              ++ (with pkgs.elmPackages; [ elm elm-format elm-test ]);
+              ++ (with pkgs.elmPackages; [ elm elm-format elm-json elm-test ]);
 
             shellHook = ''
               export PATH=$(git rev-parse --show-toplevel)/node_modules/.bin/:$PATH
