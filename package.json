@@ -18,7 +18,7 @@
   },
   "homepage": "https://package.elm-lang.org/packages/r-k-b/map-accumulate/latest/",
   "dependencies": {
-    "elm": "^0.19.1-5",
+    "elm": "^0.19.1-6",
     "elm-test": "^0.19.1-revision12"
   }
 }
